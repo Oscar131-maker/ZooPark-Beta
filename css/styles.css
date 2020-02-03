@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #ffff;
+    font-family: 'Lora', serif;
+    overflow-x: hidden;
+}
+
+/** Navegation Menu **/
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:9999;
+}
+.btn-menu{display: none;}
+.menu .logobox{margin-left: 30px;}
+.menu .logobox h1 > a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+.menu .logobox h1 > a > i{color:#f8b30e; margin-right: 10px;}
+.menu .list-container{margin-right: 30px;}
+.menu .list-container .lists{display: flex;}
+.menu .list-container .lists li{list-style: none;}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 19px;
+    margin:0px 7px;
+    padding: 5px;
+    border-radius: 3px;
+    transition: 300ms;
+}
+.menu .list-container .lists li a:hover{color:#f8b30e;}
+.menu .list-container .lists li a.active{color:#f8b30e;}
+
+/** Img header **/
+.img-header{
+    background: url(../img/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: soft-light;
+
+    position: relative;
+    width: 100%;
+    height:100vh;
+}
+.img-header .welcome{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-header .welcome h4{
+    color: #ffff;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+.img-header .welcome > h2{margin-top: 50px;}
+.img-header .welcome > h2 a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 50px;
+    font-weight: 400;
+}
+.img-header .welcome > h2 a > i{color:#f8b30e; margin-right: 10px;}
+
+
+/** About Us **/
+.about-us{width: 100%;}
+.about-us .info{
+    width: 100%;
+    margin-top: 100px;
+}
+.about-us .info h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+.about-us .info p {
+   width: 80%;
+   margin:50px auto;
+   text-align: center;
+   color:#000;
+   font-size: 19px;
+   line-height: 40px;
+}
+.about-us .info hr{
+    width: 90%;
+    border:none;
+    height: 2px;
+    background: #4d4d4d;
+    margin:auto;
+}
+.about-us .free-content{
+    width: 100%;
+    margin-top: 100px;
+    background: #1B9CFC;
+    padding:30px;
+}
+.about-us .free-content h4{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    color:#fff;
+}
+.about-us .free-content .icons{
+    width: 90%;
+    margin:30px auto;
+    display: flex;
+    justify-content: center;
+}
+.about-us .free-content .icons > div{width: 100%; margin:0px 30px;}
+.about-us .free-content .icons > div > .span-icon{
+    width:100%;
+    font-size: 40px;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+}
+.about-us .free-content .icons > div h6{
+    font-size: 25px;
+    color:#fff;
+    text-align: center;
+    font-weight:normal;
+    margin:20px 0px 5px 0px;
+}
+.about-us .free-content .icons > div p{
+    font-size: 18px;
+    text-align: center;
+    color:#fff;
+}
+
+/** Gallery **/
+.gallery-section{width: 100%;}
+.animal-icon{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.animal-icon i{
+    font-size: 120px;
+    color:#000;
+}
+.gallery-content{
+    width: 90%;
+    margin:30px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 230px);
+    grid-gap: 10px;
+}
+.gallery-content .img-card{
+    width: 100%;
+    width: 100%;
+}
+.gallery-content .img-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 300ms;
+    cursor: pointer;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:rgba(0,0,0,0.7);
+    z-index: 999999;
+    cursor: pointer;
+    display:none;
+}
+.modal #imgModal{
+    width: 75%;
+    margin:50px auto;
+    height: 75%;
+    display: block;
+    object-fit: cover;
+    cursor: auto;
+}
+.modal #caption{
+    text-align: center;
+    color:#fff;
+    font-size: 25px;
+    font-weight: normal;
+    cursor: auto;
+    text-transform: uppercase;
+}
+.modal #closeModal{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    color:#fff;
+    font-size: 30px;
+    transition: 200ms;
+}
+
+/** Footer **/
+footer{
+    width: 100%;
+    height: 60px;
+    margin-top: 100px;
+    background: #000;
+}
+footer p{
+    text-align: center;
+    line-height: 60px;
+    color:#fff;
+}
+

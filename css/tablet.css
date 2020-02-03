@@ -1,0 +1,67 @@
+@media only screen and (max-width:804px) {
+    
+    /** Navegation Menu **/
+    .btn-menu{
+        position: absolute;
+        top: 12px;
+        right: 30px;
+        display: block;
+        color:#fff;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .menu .list-container{
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: #000;
+        border-top: 3px solid #fff;
+    }
+    .menu .list-container .lists{
+        display: block;
+        width: 90%;
+        margin:50px auto;
+    }
+    .menu .list-container .lists li{
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid #fff;
+    }
+    .menu .list-container .lists li a{
+        margin:5px 0px;
+    }
+
+    /** Img Header **/
+    .img-header .welcome{
+        width: 80%;
+        margin:auto;
+    }
+    .img-header .welcome h4{
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .img-header .welcome > h2 a{
+        font-size: 40px;
+    }
+
+    /** About Us **/
+    .about-us .info h3{font-size: 35px;}
+    .about-us .info p{font-size: 18px;}
+
+    /** Gallery **/
+    .gallery-content{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(12, 350px);
+        grid-gap: 20px;
+    }
+
+    /** Modal **/
+    .modal #imgModal{
+        width: 95%;
+        height: 55%;
+    }
+    
+
+}

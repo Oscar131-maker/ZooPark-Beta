@@ -1,0 +1,11 @@
+@media only screen and (max-width:560px) {
+    
+     /** Free Content **/
+     .about-us .free-content .icons{
+         display: block;
+         margin:0px;
+         padding:10px 0px;
+     }
+     .about-us .free-content .icons > div{margin:50px 30px;}
+     .about-us .free-content .icons > div > .span-icon{font-size: 55px;}
+}
